@@ -1,0 +1,2 @@
+# nauka
+początki w GIT
