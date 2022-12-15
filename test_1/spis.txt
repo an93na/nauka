@@ -1,10 +1,10 @@
 1. pies
 2. kot
-3. ryba
-4. mysz
-5. jeż
-6. królik
-7. chomik
+3. rekin
+4. małża
+5. jeżowiec
+6. krokodyl
+7. czapla
 8. kanarek
 9. papuga
 10. kangur
