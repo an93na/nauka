@@ -1,1 +1,3 @@
-#Operatin System files
+#Operatin System file
+excluded/*
+.bat
