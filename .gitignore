@@ -1,5 +1,4 @@
 #Operatin System file
 excluded/*
-a.bat
-b.bat
-c.bat
+*.bat
+
