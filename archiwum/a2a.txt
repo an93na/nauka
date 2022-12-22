@@ -1,8 +1,11 @@
 to tajny plik a2a
+<<<<<<< HEAD
 Ala ma kota 
 co tam powieszz
 znając 
 nowe cos tam
 bla bla
+=======
 cos tam cos tam 
 nowe cos tam
+>>>>>>> change file archiwum/a2a.txt
