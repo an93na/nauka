@@ -1,7 +1,29 @@
 <!DOCTYPE html> <!-- deklaracja typu pliku -->
 <html> <!-- język w jakim będziemy tworzyć plik -->
-    <head> <!-- w sekcji head powinny znaleźć się takie rzeczy jak: --> 
+    <head> <!-- w sekcji head powinny znaleźć się metadane czyli dane o treści. Można tu zaliczyć 
+            takie rzeczy jak: tytuł strony widoczny w zakładce, domyślny język strony, dane kontaktowe do autora strony.
+            Sekcja head musi zawierać tag <title> Ta treść nie jest wyświetlana na ekranie. Tutaj zawieramy teź informacje,
+            gdzie przeglądarka powinna szukać styli CSS dla naszej strony.--> 
         <title> Projekt HTML&CSS </title> <!-- Tytuł strony wyświetlający się na zakładce -->
+        <style>
+            h1 {
+                font-size: 32px;
+            }
+            h2 {
+                font-size: 26px;
+            }
+            h3 {
+                font-size: 26px;
+            }
+            span {
+                color: magenta;
+            }
+            img {
+                width: 150px;
+                height: 150px;
+            }
+            
+        </style>
     </head>
     <body> <!-- Ta sekcja to główna część naszego pliku. To co jest wyświetlane na stronie -->
         <img src="gac.jpg"/> <!--dodawanie obrazka. Plik jest w tym samym folderze co nasz projekt.-->
