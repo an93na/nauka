@@ -58,3 +58,13 @@ header li {
     height: 180px;
     margin-right: 10px;
 }
+.naglowek4 {
+    list-style: none;
+    padding: 0;
+    display: flex; /*elementy ustawią nam się w jendej lini*/
+    flex-wrap: wrap; /*uznaje rozmiary elementów i nie upycha ich obok siebie tylko zwija niżej*/
+}
+.naglowek4 li { 
+    width: 50%; /*pozwoli to na ustawienie na stronie 2 elementów obok siebie*/
+    display: flex;
+}
