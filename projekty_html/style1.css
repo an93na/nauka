@@ -17,8 +17,9 @@ span {
     color: magenta; /* Tutaj span czyli ten ktrótki opis ma być w kolorze magenta*/
 }
 img { 
-    width: 150px;
-    height: 150px; /*Tutaj mamy deklaracje co do wymiaru naszego obrazka czyli długość i szerokość.*/
+    width: 180px;
+    height: 180px; /*Tutaj mamy deklaracje co do wymiaru naszego obrazka czyli długość i szerokość.*/
+    margin-right: 10px;
 }
 
 section,
@@ -45,4 +46,13 @@ header ul {
 }
 header li {
     margin-bottom: 15px; /*dodajemy odstępy między tekstem*/
+}
+header address img { /*ustawiamy rozmiar ikonek w sekcji adress*/
+    width: 16px;
+    height: 16px;
+    background-color: rgb(235, 137, 157); /*ustawiamy kolor pod ikonkami*/
+    margin-right: 10px; /*odsuwamy trochę ikony od tekstu*/
+    padding: 8px; /*odsuwamy ikonę od krawędzi elementu, dodajemy odstęp wewnątrz elementu*/
+    vertical-align: middle; /*aby wyrównac tekst do środka ikonki, ta metoda działa tylko dla elementów z display inline*/
+    border-radius: 50%; /*pozwala na zaokrąglenie naszych ikonek.*/
 }
