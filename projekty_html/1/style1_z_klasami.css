@@ -16,11 +16,6 @@ h3 {
 span {
     color: magenta; /* Tutaj span czyli ten ktrótki opis ma być w kolorze magenta*/
 }
-img { 
-    width: 180px;
-    height: 180px; /*Tutaj mamy deklaracje co do wymiaru naszego obrazka czyli długość i szerokość.*/
-    margin-right: 10px;
-}
 
 section,
 header { /*dla tekstu w tej sekcji ustawiamy odstępy między tekstem dla większej czytelności*/
@@ -57,4 +52,9 @@ header li {
 }
 .circle {
     border-radius: 50%;/*pozwala na zaokrąglenie naszych ikonek.*/
+}
+.profile-picture { /* klasa do zdjęcia profilowego mówiąca nam jakie rozmiary ma miec to zdjęcie*/
+    width: 180px;
+    height: 180px;
+    margin-right: 10px;
 }
