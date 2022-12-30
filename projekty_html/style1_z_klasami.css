@@ -47,12 +47,14 @@ header ul {
 header li {
     margin-bottom: 15px; /*dodajemy odstępy między tekstem*/
 }
-header address img { /*ustawiamy rozmiar ikonek w sekcji adress*/
+.address-icon { /*ustawiamy rozmiar ikonek w sekcji adress po nadaniu danej klasy dodajemy tutaj nazwę klasy którą zapisaliśmy*/
     width: 16px;
     height: 16px;
     background-color: rgb(235, 137, 157); /*ustawiamy kolor pod ikonkami*/
     margin-right: 10px; /*odsuwamy trochę ikony od tekstu*/
     padding: 8px; /*odsuwamy ikonę od krawędzi elementu, dodajemy odstęp wewnątrz elementu*/
-    vertical-align: middle; /*aby wyrównac tekst do środka ikonki, ta metoda działa tylko dla elementów z display inline*/
-    border-radius: 50%; /*pozwala na zaokrąglenie naszych ikonek.*/
+    vertical-align: middle; /*aby wyrównac tekst do środka ikonki, ta metoda działa tylko dla elementów z display inline*/ 
+}
+.circle {
+    border-radius: 50%;/*pozwala na zaokrąglenie naszych ikonek.*/
 }
