@@ -81,3 +81,27 @@ header li {
 p {
     line-height: 1.5; /*odstęp między tekstem tak zwana Interlinia*/
 }
+
+.downolad_picture {
+    border: 2px solid rgb(243, 35, 191);
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 26px;
+    transition: background-color 0.5s, color 0.5s;
+}
+.downolad_picture:hover {
+    color: white;
+    background-color: rgb(192, 87, 139);
+}
+.downolad_picture:focus{
+  outline: none;
+  color: white;
+  background-color: rgb(192, 87, 139); 
+}
+.downolad_picture:active {
+    text-decoration: underline;
+}
+.downolad_picture
