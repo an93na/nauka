@@ -1,0 +1,58 @@
+/*plik w którym przechowujemy style css dla naszego pliku HTML*/
+body { /*dzięki tej komendzie zmiany dotyczą całego pliku który zawiera się w sekcji body*/
+    font-family: Arial; /*komenda ta daje możliwość zmiany czcionki na stronie*/
+    background-color: rgb(236, 118, 147); /*ustawiamy kolor tła dla naszej strony*/
+    padding: 40px; /*zwiększenie różowej przestrzeni, żeby lepiej się wyróżniało*/ 
+}
+h1 {
+    font-size: 32px; /* Tutaj nagłówek 1 ma mieć rozmiar czcionki 32. Natomiast średniki służą do oddzielenia reguł CSS*/ 
+}
+h2 {
+    font-size: 26px; /* Tutaj nagłówek 1 ma mieć rozmiar czcionki 26.*/
+}
+h3 {
+    font-size: 26px; 
+}
+span {
+    color: magenta; /* Tutaj span czyli ten ktrótki opis ma być w kolorze magenta*/
+}
+img { 
+    width: 180px;
+    height: 180px; /*Tutaj mamy deklaracje co do wymiaru naszego obrazka czyli długość i szerokość.*/
+    margin-right: 10px;
+}
+
+section,
+header { /*dla tekstu w tej sekcji ustawiamy odstępy między tekstem dla większej czytelności*/
+    padding: 10px 60px 20px 60px;
+    background-color: white; /*ustawiamy kolor tła dla naszej strony*/
+    width: 960px; /* nadajemy im rozmiar kartki papieru*/
+    margin: 0 auto; /*ustawiamy żeby nasza storna była na środku*/
+
+}
+header{
+    display: flex; /*ustawia elementy w jednej lini*/
+    align-items: center; /*pozwala ustawić wsztskie elementy które są w jendej lini w centralnym położeniu, w jednakowych
+                        odstępach od górnej krawędzi*/
+    justify-content: space-between; /*rozmieszcza elementy w poziomie tak, że pierwszy i ostatni znajdują się przy krawędzi
+                                    a  pozostałe oddzielone są równym odstępem.*/
+    
+}
+/* ul{
+    list-style: none; -pozbywamy się wszystkich kropek przy wyliczeniach
+} */
+header ul {
+    list-style: none; /*pozbywamy się kropek pzy wyliczniach tylko w sekcji header*/
+}
+header li {
+    margin-bottom: 15px; /*dodajemy odstępy między tekstem*/
+}
+header address img { /*ustawiamy rozmiar ikonek w sekcji adress*/
+    width: 16px;
+    height: 16px;
+    background-color: rgb(235, 137, 157); /*ustawiamy kolor pod ikonkami*/
+    margin-right: 10px; /*odsuwamy trochę ikony od tekstu*/
+    padding: 8px; /*odsuwamy ikonę od krawędzi elementu, dodajemy odstęp wewnątrz elementu*/
+    vertical-align: middle; /*aby wyrównac tekst do środka ikonki, ta metoda działa tylko dla elementów z display inline*/
+    border-radius: 50%; /*pozwala na zaokrąglenie naszych ikonek.*/
+}
