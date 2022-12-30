@@ -1,7 +1,8 @@
 /*plik w którym przechowujemy style css dla naszego pliku HTML*/
 body { /*dzięki tej komendzie zmiany dotyczą całego pliku który zawiera się w sekcji body*/
     font-family: Arial; /*komenda ta daje możliwość zmiany czcionki na stronie*/
-    background-color: aquamarine; /*ustawiamy kolor tła dla naszej strony*/
+    background-color: rgb(236, 118, 147); /*ustawiamy kolor tła dla naszej strony*/
+    padding: 40px; /*zwiększenie różowej przestrzeni, żeby lepiej się wyróżniało*/ 
 }
 h1 {
     font-size: 32px; /* Tutaj nagłówek 1 ma mieć rozmiar czcionki 32. Natomiast średniki służą do oddzielenia reguł CSS*/ 
@@ -27,4 +28,7 @@ header { /*dla tekstu w tej sekcji ustawiamy odstępy między tekstem dla więks
     width: 960px; /* nadajemy im rozmiar kartki papieru*/
     margin: 0 auto; /*ustawiamy żeby nasza storna była na środku*/
 
+}
+header{
+    display: flex; /*ustawia elementy w jednej lini*/
 }
