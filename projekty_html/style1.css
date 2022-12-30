@@ -31,4 +31,10 @@ header { /*dla tekstu w tej sekcji ustawiamy odstępy między tekstem dla więks
 }
 header{
     display: flex; /*ustawia elementy w jednej lini*/
+    align-items: center; /*pozwala ustawić wsztskie elementy które są w jendej lini w centralnym położeniu, w jednakowych
+                        odstępach od górnej krawędzi*/
+    justify-content: space-between; /*rozmieszcza elementy w poziomie tak, że pierwszy i ostatni znajdują się przy krawędzi
+                                    a  pozostałe oddzielone są równym odstępem.*/
+    
+    
 }
