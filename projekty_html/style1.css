@@ -36,5 +36,13 @@ header{
     justify-content: space-between; /*rozmieszcza elementy w poziomie tak, że pierwszy i ostatni znajdują się przy krawędzi
                                     a  pozostałe oddzielone są równym odstępem.*/
     
-    
+}
+/* ul{
+    list-style: none; -pozbywamy się wszystkich kropek przy wyliczeniach
+} */
+header ul {
+    list-style: none; /*pozbywamy się kropek pzy wyliczniach tylko w sekcji header*/
+}
+header li {
+    margin-bottom: 15px; /*dodajemy odstępy między tekstem*/
 }
