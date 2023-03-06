@@ -27,3 +27,7 @@ let wartoscName = document.getElementsByName("imie");
 let wartoscName2 = document.getElementsByName("nazwisko");
 console.log("Szukanie po nazwie /imie/ w formularzu getElementsByName", wartoscName);
 console.log("Szukanie po nazwie /nazwisko/ w formularzu getElementsByName", wartoscName2);
+
+const el = document.getElementsByName('nazwisko')[0];
+const maType= el.hasAttribute('type');
+console.log('element o name = nazwisko ' + (maType? 'ma atrybut type':'nie ma atrybutu type'));
