@@ -14,11 +14,15 @@ console.log("Pierwszy element td to : ", pierwszyTd);
 let elementId = document.getElementById('element2');
 console.log('znaleziony element po Id: ', elementId);
 
-//ElementsByClassName wyszukuje po nazwie klasy i zwraca kilka elementów
+//getElementsByClassName wyszukuje po nazwie klasy i zwraca kilka elementów
 let klasy = document.getElementsByClassName("klasa1");
 console.log("elementy znalezione po ElementsByClassName", klasy);
 
-//etElementsByTagName wyszukuje po znacznikach i zwraca kilka elementow
+//getElementsByTagName wyszukuje po znacznikach i zwraca kilka elementow
 let znacznik = document.getElementsByTagName("td");
 console.log("Wyszukiwanie po getElementsByTagName ", znacznik);
 
+//getElementsByName wyszukuje pole o danej nazwie w formularzu
+let wartoscName = document.getElementsByName("imie");
+let wartoscName2 = document.getElementsByName("nazwisko");
+console.log("Szukanie po nazwie w formularzu getElementsByName", wartoscName);
