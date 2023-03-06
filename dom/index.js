@@ -25,4 +25,5 @@ console.log("Wyszukiwanie po getElementsByTagName ", znacznik);
 //getElementsByName wyszukuje pole o danej nazwie w formularzu
 let wartoscName = document.getElementsByName("imie");
 let wartoscName2 = document.getElementsByName("nazwisko");
-console.log("Szukanie po nazwie w formularzu getElementsByName", wartoscName);
+console.log("Szukanie po nazwie /imie/ w formularzu getElementsByName", wartoscName);
+console.log("Szukanie po nazwie /nazwisko/ w formularzu getElementsByName", wartoscName2);
