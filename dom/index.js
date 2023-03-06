@@ -42,7 +42,7 @@ przyciskSet.addEventListener('click', function() {console.log('kliknięto na set
                                                     
 const hasloWidget = document.getElementsByName("haslo")[0];
 hasloWidget.addEventListener('keyup', function() {console.log('kliknięto na klawisz')
-                                                    let dlugoscHasla = hasloWidget.value.length;
-                                                    console.log('obecna wartość to: ', dlugoscHasla);
+                                                    let komplikacja = hasloWidget.value.length /8;
+                                                    console.log('obecna wartość to: '+ komplikacja);
 });
 
