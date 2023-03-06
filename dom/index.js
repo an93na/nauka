@@ -43,6 +43,29 @@ przyciskSet.addEventListener('click', function() {console.log('kliknięto na set
 const hasloWidget = document.getElementsByName("haslo")[0];
 hasloWidget.addEventListener('keyup', function() {console.log('kliknięto na klawisz')
                                                     let komplikacja = hasloWidget.value.length /8;
+                                                    let kolor = 'weak';
+                                                    if (komplikacja < 0.25){
+                                                        kolor = 'weak';
+                                                    }
+                                                    else if (komplikacja <0.5){
+                                                        kolor = 'medium';
+                                                    }
+                                                    else if (komplikacja <0.75){
+                                                        kolor = 'almost';
+                                                    }
+                                                    else if (komplikacja < 1){
+                                                        kolor = 'close'
+                                                    }
+                                                    else if (komplikacja < 1.5){
+                                                        kolor = 'ok'
+                                                    }
+                                                    else if (komplikacja <2) {
+                                                        kolor = 'super'
+                                                    }
+                                                    else {
+                                                        kolor = 'extra'
+                                                    }
                                                     console.log('obecna wartość to: '+ komplikacja);
+                                                    hasloWidget.setAttribute("class", kolor)
 });
 
