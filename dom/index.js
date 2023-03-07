@@ -37,7 +37,7 @@ const przyciskDel = document.getElementById("del");
 
 przyciskSet.addEventListener('click', function() {console.log('kliknięto na set')
                                                     el.setAttribute('class', 'wazne')});
-                                                    przyciskDel.addEventListener('click', function() {console.log('kliknięto na del')
+przyciskDel.addEventListener('click', function() {console.log('kliknięto na del')
                                                     el.removeAttribute('class', 'wazne')});
                                                     
 const hasloWidget = document.getElementsByName("haslo")[0];
