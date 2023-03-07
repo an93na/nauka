@@ -71,8 +71,18 @@ hasloWidget.addEventListener('keyup', function() {console.log('kliknięto na kla
                                                     sila.innerText= "siła hasła = " + komplikacja + kolor;
 });
 
-const element = document.createElement("h1");
-console.log(element);
-element.innerText = "dodany element"
-const elH3 = document.getElementsByTagName("h3")[0];
-elH3.insertBefore(element,elH3.firstChild);
+// const element = document.createElement("h1");
+// console.log(element);
+// element.innerText = "dodany element"
+// const elH3 = document.getElementsByTagName("h3")[0];
+// elH3.insertBefore(element,elH3.firstChild);
+
+const dodajEl = document.getElementsByName("dodaj")[0];
+dodajEl.addEventListener("click", function()
+{
+    const kontener = document.getElementById("kontener");
+    let nowyElement = document.createElement("span");
+    nowyElement.innerText = "nowySpan id = "+Math.floor(Math.random()*100); 
+    kontener.insertBefore(nowyElement, kontener.firstChild);
+
+});
