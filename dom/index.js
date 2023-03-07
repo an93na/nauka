@@ -71,3 +71,7 @@ hasloWidget.addEventListener('keyup', function() {console.log('kliknięto na kla
                                                     sila.innerText= "siła hasła = " + komplikacja + kolor;
 });
 
+const element = document.createElement("h1");
+console.log(element);
+const elH3 = document.getElementsByTagName("h3")[0];
+elH3.insertBefore(element,elH3.firstChild);
