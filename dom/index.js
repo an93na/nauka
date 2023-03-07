@@ -87,5 +87,6 @@ dodajEl.addEventListener("click", function()
     const kolorR = Math.floor(Math.random()*256);
     const kolorG = Math.floor(Math.random()*256);
     const kolorB = Math.floor(Math.random()*256);
-
+    let kolorSzestnastkowy = "#"+kolorR.toString(16)+kolorG.toString(16)+kolorB.toString(16);
+    nowyElement.style.backgroundColor = kolorSzestnastkowy;
 });
