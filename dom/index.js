@@ -84,5 +84,8 @@ dodajEl.addEventListener("click", function()
     let nowyElement = document.createElement("span");
     nowyElement.innerText = "nowySpan id = "+Math.floor(Math.random()*100); 
     kontener.insertBefore(nowyElement, kontener.firstChild);
+    const kolorR = Math.floor(Math.random()*256);
+    const kolorG = Math.floor(Math.random()*256);
+    const kolorB = Math.floor(Math.random()*256);
 
 });
