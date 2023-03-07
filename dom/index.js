@@ -41,6 +41,7 @@ przyciskSet.addEventListener('click', function() {console.log('kliknięto na set
                                                     el.removeAttribute('class', 'wazne')});
                                                     
 const hasloWidget = document.getElementsByName("haslo")[0];
+const sila = document.getElementById("sila");
 hasloWidget.addEventListener('keyup', function() {console.log('kliknięto na klawisz')
                                                     let komplikacja = hasloWidget.value.length /8;
                                                     let kolor = 'weak';
@@ -66,6 +67,7 @@ hasloWidget.addEventListener('keyup', function() {console.log('kliknięto na kla
                                                         kolor = 'extra'
                                                     }
                                                     console.log('obecna wartość to: '+ komplikacja);
-                                                    hasloWidget.setAttribute("class", kolor)
+                                                    hasloWidget.setAttribute("class", kolor);
+                                                    sila.innerText= "siła hasła = " + komplikacja + kolor;
 });
 
