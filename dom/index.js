@@ -98,3 +98,13 @@ dodajEl.addEventListener("click", function()
         }
     })
 });
+
+document.getElementById("tescik").addEventListener('mouseenter',function(){
+    console.log('mouseEnter')
+})
+
+document.getElementById("tescik").addEventListener('mouseenter',function(){
+    console.log('mouseEnter')
+})
+
+
