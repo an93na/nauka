@@ -74,7 +74,8 @@ hasloWidget.addEventListener('keyup', function() {console.log('kliknięto na kla
                                                     let kwadrat = document.createElement('div');
                                                     kwadrat.className = 'kwadracik';
                                                     kwadrat.setAttribute("class",kolor+" kwadracik");
-                                                    document.body.appendChild(kwadrat);
+                                                    // document.body.appendChild(kwadrat);
+                                                    silaObiekt.appendChild(kwadrat);
 });
 
 // const element = document.createElement("h1");
