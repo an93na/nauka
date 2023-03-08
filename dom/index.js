@@ -92,6 +92,9 @@ dodajEl.addEventListener("click", function()
     nowyElement.addEventListener("click", function(evt){
         console.log("klik span", evt);
         // evt.target.innerText="Trafiony"
-        evt.target.remove();
+        // evt.target.remove();
+        if(evt.target.previousElementSibling) {
+            evt.target.previousElementSibling.remove()
+        }
     })
 });
