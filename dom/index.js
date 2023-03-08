@@ -94,7 +94,8 @@ dodajEl.addEventListener("click", function()
         // evt.target.innerText="Trafiony"
         // evt.target.remove();
         if(evt.target.previousElementSibling) {
-            evt.target.previousElementSibling.remove()
+            evt.target.previousElementSibling.removeEventListener("click", null);
+            evt.target.previousElementSibling.remove();
         }
     })
 });
