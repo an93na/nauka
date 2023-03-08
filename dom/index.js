@@ -89,4 +89,7 @@ dodajEl.addEventListener("click", function()
     const kolorB = 16 + Math.floor(Math.random()*256);
     let kolorSzestnastkowy = "#"+kolorR.toString(16)+kolorG.toString(16)+kolorB.toString(16);
     nowyElement.style.backgroundColor = kolorSzestnastkowy;
+    nowyElement.addEventListener("click", function(){
+        console.log("klik span")
+    })
 });
