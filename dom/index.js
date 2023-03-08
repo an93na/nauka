@@ -100,11 +100,14 @@ dodajEl.addEventListener("click", function()
 });
 
 document.getElementById("tescik").addEventListener('mouseenter',function(){
-    console.log('mouseEnter')
-})
+    console.log('mouseEnter');
+});
 
-document.getElementById("tescik").addEventListener('mouseenter',function(){
-    console.log('mouseEnter')
-})
+document.getElementById("tescik").addEventListener('mouseout',function(){
+    console.log('mouseOut');
+});
 
+document.getElementById("tescik").addEventListener('mousemove',function(){
+    console.log('mouseMove');
+});
 
