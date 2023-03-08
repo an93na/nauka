@@ -42,11 +42,13 @@ przyciskDel.addEventListener('click', function() {console.log('kliknięto na del
                                                     
 const hasloWidget = document.getElementsByName("haslo")[0];
 const sila = document.getElementById("sila");
+let silaObiekt = document.getElementById("silaObiekt")
 hasloWidget.addEventListener('keyup', function() {console.log('kliknięto na klawisz')
                                                     let komplikacja = hasloWidget.value.length /8;
                                                     let kolor = 'weak';
                                                     if (komplikacja < 0.25){
                                                         kolor = 'weak';
+                                        
                                                     }
                                                     else if (komplikacja <0.5){
                                                         kolor = 'medium';
@@ -69,6 +71,10 @@ hasloWidget.addEventListener('keyup', function() {console.log('kliknięto na kla
                                                     console.log('obecna wartość to: '+ komplikacja);
                                                     hasloWidget.setAttribute("class", kolor);
                                                     sila.innerText= "siła hasła = " + komplikacja + kolor;
+                                                    let kwadrat = document.createElement('div');
+                                                    kwadrat.className = 'kwadracik';
+                                                    kwadrat.setAttribute("class",kolor+" kwadracik");
+                                                    document.body.appendChild(kwadrat);
 });
 
 // const element = document.createElement("h1");
