@@ -117,3 +117,6 @@ document.getElementById("tescik").addEventListener('mouseleave',function(){
 });
 
 
+document.getElementById("tescik").addEventListener('mouseover',function(){
+    console.log('mouseOver');
+});
