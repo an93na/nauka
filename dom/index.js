@@ -111,3 +111,9 @@ document.getElementById("tescik").addEventListener('mousemove',function(){
     console.log('mouseMove');
 });
 
+
+document.getElementById("tescik").addEventListener('mouseleave',function(){
+    console.log('mouseLeave');
+});
+
+
