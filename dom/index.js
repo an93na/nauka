@@ -91,5 +91,7 @@ dodajEl.addEventListener("click", function()
     nowyElement.style.backgroundColor = kolorSzestnastkowy;
     nowyElement.addEventListener("click", function(evt){
         console.log("klik span", evt);
+        // evt.target.innerText="Trafiony"
+        evt.target.remove();
     })
 });
