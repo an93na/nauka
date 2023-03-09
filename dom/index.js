@@ -84,6 +84,13 @@ hasloWidget.addEventListener('keyup', function() {console.log('kliknięto na kla
 // const elH3 = document.getElementsByTagName("h3")[0];
 // elH3.insertBefore(element,elH3.firstChild);
 
+document.getElementById("kontener").addEventListener("click", function(evt){
+    if(evt.target.tagName == 'SPAN'){
+        evt.target.innerText = 'trafiony';
+    }
+    
+});
+
 const dodajEl = document.getElementsByName("dodaj")[0];
 dodajEl.addEventListener("click", function()
 {
@@ -96,6 +103,8 @@ dodajEl.addEventListener("click", function()
     const kolorB = 16 + Math.floor(Math.random()*256);
     let kolorSzestnastkowy = "#"+kolorR.toString(16)+kolorG.toString(16)+kolorB.toString(16);
     nowyElement.style.backgroundColor = kolorSzestnastkowy;
+
+    /*
     nowyElement.addEventListener("click", function(evt){
         console.log("klik span", evt);
         // evt.target.innerText="Trafiony"
@@ -105,6 +114,7 @@ dodajEl.addEventListener("click", function()
             evt.target.previousElementSibling.remove();
         }
     })
+    */
 });
 
 document.getElementById("tescik").addEventListener('mouseenter',function(){
