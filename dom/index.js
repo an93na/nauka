@@ -86,10 +86,14 @@ hasloWidget.addEventListener('keyup', function() {console.log('kliknięto na kla
 
 document.getElementById("kontener").addEventListener("click", function(evt){
     if(evt.target.tagName == 'SPAN'){
-        evt.target.innerText = 'trafiony';
-        evt.target.style.backgroundColor = "#444444";
+        if(evt.target.innerText === 'trafiony'){
+            evt.target.innerText = 'wcześniej';
+            evt.target.style.backgroundColor = "000000";
+        } else {
+            evt.target.innerText = 'trafiony';
+            evt.target.style.backgroundColor = "#444444";
+        }
     }
-    
 });
 
 const dodajEl = document.getElementsByName("dodaj")[0];
