@@ -151,4 +151,6 @@ function aktualnyCzas () {
 
 let zegarekDiv = document.getElementById("zegarek");
 console.log("Mamy godzine: "+ aktualnyCzas()); 
+
+window.setInterval(function() {console.log('tik')}, 1000);
 zegarekDiv.innerText = aktualnyCzas();
