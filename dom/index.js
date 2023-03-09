@@ -143,3 +143,12 @@ document.getElementById("tescik").addEventListener('mouseleave',function(){
 document.getElementById("tescik").addEventListener('mouseover',function(){
     console.log('mouseOver');
 });
+
+function aktualnyCzas () {
+    const teraz = new Date();
+    return teraz.getHours() + ":" + teraz.getMinutes() + ":" + teraz.getSeconds();
+}
+
+let zegarekDiv = document.getElementById("zegarek");
+console.log("Mamy godzine: "+ aktualnyCzas()); 
+zegarekDiv.innerText = aktualnyCzas();
