@@ -156,4 +156,13 @@ let uchwytInterval = window.setInterval(function() {
     zegarekDiv.innerText = aktualnyCzas();
 }, 1000);
 
-window.clearInterval(uchwytInterval);
+
+document.getElementById("zegarStop").onclick = function(){
+    window.clearInterval(uchwytInterval);
+}
+document.getElementById("zegarStart").onclick = function(){
+    uchwytInterval = window.setInterval(function() {
+        zegarekDiv.innerText = aktualnyCzas();
+    }, 1000);
+    
+}
