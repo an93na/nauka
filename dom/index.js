@@ -87,6 +87,7 @@ hasloWidget.addEventListener('keyup', function() {console.log('kliknięto na kla
 document.getElementById("kontener").addEventListener("click", function(evt){
     if(evt.target.tagName == 'SPAN'){
         evt.target.innerText = 'trafiony';
+        evt.target.style.backgroundColor = "#444444";
     }
     
 });
