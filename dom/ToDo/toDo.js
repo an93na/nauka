@@ -14,6 +14,7 @@ function zrobElement(nazwa,tekst){
 const lista = znajdzElement("ul");
 const dodaj = znajdzElement("button");
 const input = znajdzElement("input[name='rzecz']");
+const bledy = znajdzElement("#bledy");
 
 dodaj.addEventListener('click', () => {
     // console.log('klik');
@@ -27,6 +28,7 @@ dodaj.addEventListener('click', () => {
     }
     else {
         const ostrzezenie =  zrobElement("div","nie można dodac pustej czynności");
+        bledy.appendChild(ostrzezenie);
     }
     
 })
