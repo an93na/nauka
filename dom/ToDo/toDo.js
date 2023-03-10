@@ -25,9 +25,17 @@ dodaj.addEventListener('click', () => {
             const elUsun = zrobElement("button","usun");
             lista.appendChild(elLi);
             elLi.appendChild(elUsun);
+            const potwierdzenie =  zrobElement("div","dodano czynność");
+            for(let i=0; i<bledy.children.length; i++){
+                bledy.children[i].length.remove();
+            }
+            bledy.appendChild(potwierdzenie);
     }
     else {
         const ostrzezenie =  zrobElement("div","nie można dodac pustej czynności");
+        for(let i=0; i<bledy.children.length; i++){
+            bledy.children[i].length.remove();
+        }
         bledy.appendChild(ostrzezenie);
     }
     
