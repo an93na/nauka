@@ -166,3 +166,9 @@ document.getElementById("zegarStart").onclick = function(){
     }, 1000);
     
 }
+
+function formatuj (liczba, iloscPozycji){
+    const liczbaLancuch = liczba.toString(10);
+    const dlugoscLiczby = liczbaLancuch.length;
+    const iloscZer = iloscPozycji - dlugoscLiczby;
+}
