@@ -146,7 +146,8 @@ document.getElementById("tescik").addEventListener('mouseover',function(){
 
 function aktualnyCzas () {
     const teraz = new Date();
-    return formatuj(teraz.getHours(),2)  + ":" +formatuj(teraz.getMinutes(),2)  + ":" + formatuj(teraz.getSeconds(),2);
+    const iloscPozycji =2; 
+    return formatuj(teraz.getHours(), iloscPozycji)  + ":" +formatuj(teraz.getMinutes(), iloscPozycji)  + ":" + formatuj(teraz.getSeconds(), iloscPozycji);
 }
 
 let zegarekDiv = document.getElementById("zegarek");
