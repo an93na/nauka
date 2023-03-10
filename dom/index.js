@@ -146,7 +146,7 @@ document.getElementById("tescik").addEventListener('mouseover',function(){
 
 function aktualnyCzas () {
     const teraz = new Date();
-    return teraz.getHours() + ":" + teraz.getMinutes() + ":" + teraz.getSeconds();
+    return formatuj(teraz.getHours(),2)  + ":" +formatuj(teraz.getMinutes(),2)  + ":" + formatuj(teraz.getSeconds(),2);
 }
 
 let zegarekDiv = document.getElementById("zegarek");
@@ -171,4 +171,9 @@ function formatuj (liczba, iloscPozycji){
     const liczbaLancuch = liczba.toString(10);
     const dlugoscLiczby = liczbaLancuch.length;
     const iloscZer = iloscPozycji - dlugoscLiczby;
+    const zero = "0";
+    const wynik = zero.repeat(iloscZer) + liczbaLancuch;
+    return wynik
 }
+
+console.log(formatuj (69, 4)); 
