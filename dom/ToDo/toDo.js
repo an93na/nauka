@@ -18,6 +18,11 @@ function pokazKomunikat(tekst, waga){
         }
         ostrzezenie.setAttribute("class", "waga"+waga)
         bledy.appendChild(ostrzezenie);
+        setTimeout(() => {
+            for(let i=0; i<bledy.children.length; i++){
+                bledy.children[i].remove();
+            }
+        },2000)
 }
 
 const lista = znajdzElement("ul");
