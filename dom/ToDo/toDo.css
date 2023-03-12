@@ -11,3 +11,24 @@ li > button:hover {
     background-color: deepskyblue;
     color: bisque;
 }
+
+#bledy {
+    margin-bottom: 10px;
+}
+
+#bledy .waga0 {
+    background-color: grey;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+
+
+#bledy .waga2 {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    
+}

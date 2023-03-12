@@ -11,11 +11,12 @@ function zrobElement(nazwa,tekst){
     return element;
 }
 
-function pokazKomunikat(tekst){
+function pokazKomunikat(tekst, waga){
     const ostrzezenie =  zrobElement("div",tekst);
         for(let i=0; i<bledy.children.length; i++){
             bledy.children[i].remove();
         }
+        ostrzezenie.setAttribute("class", "waga"+waga)
         bledy.appendChild(ostrzezenie);
 }
 
@@ -33,9 +34,9 @@ dodaj.addEventListener('click', () => {
             const elUsun = zrobElement("button","usun");
             lista.appendChild(elLi);
             elLi.appendChild(elUsun);
-            pokazKomunikat('dodano czynność')
+            pokazKomunikat('dodano czynność', 0)
     }
     else {
-        pokazKomunikat('nie można dodać pustego pola')
+        pokazKomunikat('nie można dodać pustego pola', 2)
     }
 })
