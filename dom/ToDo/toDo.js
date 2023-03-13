@@ -37,8 +37,26 @@ dodaj.addEventListener('click', () => {
         input.value="";
             const elLi = zrobElement("li",rzecz);
             const elUsun = zrobElement("button","usun");
+            const elGora = zrobElement("button", "w górę");
+            const elGotowe = zrobElement("button", "zrobione");
             lista.appendChild(elLi);
+
             elLi.appendChild(elUsun);
+            elLi.appendChild(elGora);
+            elLi.appendChild(elGotowe);
+
+            elGotowe.onclick = (evt) => {
+                
+                evt.target.parentElement.style.textDecoration = "line-through";
+            }
+
+            elUsun.onclick = (evt) => {
+                evt.target.parentElement.remove();
+            }
+            
+            // elGora.onclick = (evt) => {
+            //     evt.target.
+            // }
             pokazKomunikat('dodano czynność', 0)
     }
     else {
