@@ -5,9 +5,12 @@ function znajdzElementy(selector){
 function znajdzElement(selektor) {
     return document.querySelector(selektor);
 }
-function zrobElement(nazwa,tekst){
-    const element = document.createElement(nazwa);
+function zrobElement(nazwa,tekst,opcje = {}){
+    const element = document.createElement(nazwa, opcje);
     element.innerText = tekst;
+    if (opcje) {
+        element.setAttribute(opcje.nazwaAtry, opcje.wartoscAtry);
+    }
     return element;
 }
 
@@ -39,7 +42,7 @@ dodaj.addEventListener('click', () => {
             const elUsun = zrobElement("button","usun");
             const elGora = zrobElement("button", "w górę");
             const elDol = zrobElement("button", "w dol");
-            const elGotowe = zrobElement("button", "zrobione");
+            const elGotowe = zrobElement("input", "zrobione", {nazwaAtry: 'type', wartoscAtry: 'checkbox'});
             lista.appendChild(elLi);
 
             elLi.appendChild(elUsun);
@@ -49,9 +52,17 @@ dodaj.addEventListener('click', () => {
             
 
             elGotowe.onclick = (evt) => {
+                if (evt.target.checked == true){
+                    evt.target.parentElement.style.textDecoration = "line-through";
+                }
+                else {
+                    evt.target.parentElement.style.textDecoration = "none";
+                }
                 
-                evt.target.parentElement.style.textDecoration = "line-through";
+
+                
             }
+
 
             elUsun.onclick = (evt) => {
                 evt.target.parentElement.remove();
