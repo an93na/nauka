@@ -1,5 +1,16 @@
 function rysujWykres (element, s1, s2) {
-    
+    const slupek1 = zrobElement("div","");
+    const slupek2 = zrobElement("div","");
+    slupek1.style.height = '100px';
+    slupek2.style.height = '70px';
+    slupek1.style.width = '20px';
+    slupek2.style.width = '20px';
+    slupek1.style.display = "inline-block";
+    slupek2.style.display = "inline-block";
+    slupek1.style.backgroundColor = "#ff0000";
+    slupek2.style.backgroundColor = "#00ff00";
+    element.appendChild(slupek1);
+    element.appendChild(slupek2);
 }
 
 
@@ -100,3 +111,4 @@ dodaj.addEventListener('click', () => {
         pokazKomunikat('nie można dodać pustego pola', 2)
     }
 })
+rysujWykres(document.getElementById("wykres", 100, 32));
