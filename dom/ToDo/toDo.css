@@ -33,3 +33,9 @@ li > button:hover {
     border-radius: 10px;
     
 }
+
+input[type=checkbox]{
+    width: 15px;
+    height: 20px;
+
+}
