@@ -124,4 +124,4 @@ dodaj.addEventListener('click', () => {
         pokazKomunikat('nie można dodać pustego pola', 2)
     }
 })
-rysujWykres(document.getElementById("wykres"), 8, 5);
+rysujWykres(document.getElementById("wykres"), 8, 2);
