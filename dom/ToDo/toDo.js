@@ -38,12 +38,15 @@ dodaj.addEventListener('click', () => {
             const elLi = zrobElement("li",rzecz);
             const elUsun = zrobElement("button","usun");
             const elGora = zrobElement("button", "w górę");
+            const elDol = zrobElement("button", "w dol");
             const elGotowe = zrobElement("button", "zrobione");
             lista.appendChild(elLi);
 
             elLi.appendChild(elUsun);
             elLi.appendChild(elGora);
+            elLi.appendChild(elDol);
             elLi.appendChild(elGotowe);
+            
 
             elGotowe.onclick = (evt) => {
                 
@@ -53,10 +56,26 @@ dodaj.addEventListener('click', () => {
             elUsun.onclick = (evt) => {
                 evt.target.parentElement.remove();
             }
+
+            elGora.onclick = (evt) => {
+                const li1 = evt.target.parentElement;
+                const liPoprzedzający = li1.previousElementSibling;
+                const ul = li1.parentElement;
+                ul.insertBefore(li1, liPoprzedzający);
+            }
             
-            // elGora.onclick = (evt) => {
-            //     evt.target.
-            // }
+            elDol.onclick = (evt) => {
+                
+                const li1 = evt.target.parentElement;
+                const liNastepny = li1.nextElementSibling;
+                const ul = li1.parentElement;
+                if(liNastepny !== null) {
+                    ul.insertBefore(liNastepny, li1);
+                }
+                
+            }
+            
+
             pokazKomunikat('dodano czynność', 0)
     }
     else {
