@@ -1,3 +1,10 @@
+function rysujWykres (element, s1, s2) {
+    
+}
+
+
+
+
 function znajdzElementy(selector){
    return document.querySelectorAll(selector);
 }
