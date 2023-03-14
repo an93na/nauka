@@ -75,27 +75,29 @@ dodaj.addEventListener('click', () => {
             const elDol = zrobElement("button", "w dol");
             const elGotowe = zrobElement("input", "zrobione", {nazwaAtry: 'type', wartoscAtry: 'checkbox'});
             lista.appendChild(elLi);
-
             elLi.appendChild(elUsun);
             elLi.appendChild(elGora);
             elLi.appendChild(elDol);
             elLi.appendChild(elGotowe);
             
+            let iloscElLi = znajdzElementy("li").length;
+            // console.log(iloscElLi);
 
             elGotowe.onclick = (evt) => {
                 let Zaznaczony = 0;
                 if (evt.target.checked == true){
                     evt.target.parentElement.style.textDecoration = "line-through";
-                    for (let i =0; i<elGotowe.length; i++){
+                    for (let i =0; i<iloscElLi; i++){
                         Zaznaczony = Zaznaczony++
                     }
                 }
                 else {
                     evt.target.parentElement.style.textDecoration = "none";
                 }
-                console.log(Zaznaczony)
+                console.log(Zaznaczony);
+                
             }
-
+                console.log(iloscElLi);
             elUsun.onclick = (evt) => {
                 evt.target.parentElement.remove();
             }
