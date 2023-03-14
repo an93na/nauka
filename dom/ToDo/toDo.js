@@ -83,13 +83,17 @@ dodaj.addEventListener('click', () => {
             
 
             elGotowe.onclick = (evt) => {
+                let Zaznaczony = 0;
                 if (evt.target.checked == true){
                     evt.target.parentElement.style.textDecoration = "line-through";
+                    for (let i =0; i<elGotowe.length; i++){
+                        Zaznaczony = Zaznaczony++
+                    }
                 }
                 else {
                     evt.target.parentElement.style.textDecoration = "none";
                 }
-                
+                console.log(Zaznaczony)
             }
 
             elUsun.onclick = (evt) => {
