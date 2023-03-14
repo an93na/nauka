@@ -90,10 +90,7 @@ dodaj.addEventListener('click', () => {
                     evt.target.parentElement.style.textDecoration = "none";
                 }
                 
-
-                
             }
-
 
             elUsun.onclick = (evt) => {
                 evt.target.parentElement.remove();
