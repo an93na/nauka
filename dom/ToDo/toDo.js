@@ -92,7 +92,6 @@ dodaj.addEventListener('click', () => {
                     evt.target.parentElement.style.textDecoration = "none";
                 }
 
-
                 const checkboxy = document.querySelectorAll("input[type='checkbox']");
                 checkboxy.forEach(checkbox => {
                 if (checkbox.checked) {
@@ -100,7 +99,7 @@ dodaj.addEventListener('click', () => {
                 }
             });
                 console.log(Zaznaczony);
-                
+
                 rysujWykres(document.getElementById("wykres"), iloscElLi, Zaznaczony)
             }
                 
