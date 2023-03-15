@@ -88,7 +88,7 @@ dodaj.addEventListener('click', () => {
                 if (evt.target.checked == true){
                     evt.target.parentElement.style.textDecoration = "line-through";
                     for (let i =0; i<iloscElLi; i++){
-                        Zaznaczony = Zaznaczony++
+                        Zaznaczony++
                     }
                 }
                 else {
@@ -96,8 +96,16 @@ dodaj.addEventListener('click', () => {
                 }
                 console.log(Zaznaczony);
                 
+                return Zaznaczony
+
             }
+                
                 console.log(iloscElLi);
+                // rysujWykres(document.getElementById("wykres"), iloscElLi, Zaznaczony)
+            
+                
+
+
             elUsun.onclick = (evt) => {
                 evt.target.parentElement.remove();
             }
