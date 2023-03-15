@@ -87,13 +87,18 @@ dodaj.addEventListener('click', () => {
                 let Zaznaczony = 0;
                 if (evt.target.checked == true){
                     evt.target.parentElement.style.textDecoration = "line-through";
-                    for (let i =0; i<iloscElLi; i++){
-                        Zaznaczony++
-                    }
                 }
                 else {
                     evt.target.parentElement.style.textDecoration = "none";
                 }
+
+
+                const checkboxy = document.querySelectorAll("input[type='checkbox']");
+                checkboxy.forEach(checkbox => {
+                if (checkbox.checked) {
+                Zaznaczony++;
+                }
+            });
                 console.log(Zaznaczony);
                 
             }
