@@ -96,8 +96,6 @@ dodaj.addEventListener('click', () => {
                 }
                 console.log(Zaznaczony);
                 
-                return Zaznaczony
-
             }
                 
                 console.log(iloscElLi);
