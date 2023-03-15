@@ -101,10 +101,11 @@ dodaj.addEventListener('click', () => {
             });
                 console.log(Zaznaczony);
                 
+                rysujWykres(document.getElementById("wykres"), iloscElLi, Zaznaczony)
             }
                 
                 console.log(iloscElLi);
-                // rysujWykres(document.getElementById("wykres"), iloscElLi, Zaznaczony)
+                
             
                 
 
