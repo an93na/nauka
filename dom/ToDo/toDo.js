@@ -92,7 +92,7 @@ dodaj.addEventListener('click', () => {
                     evt.target.parentElement.style.textDecoration = "none";
                 }
 
-                const checkboxy = document.querySelectorAll("input[type='checkbox']");
+                const checkboxy = znajdzElementy("input[type='checkbox']");
                 checkboxy.forEach(checkbox => {
                 if (checkbox.checked) {
                 Zaznaczony++;
