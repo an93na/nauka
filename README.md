@@ -1,3 +1,2 @@
 # nauka
-początki w GIT
-bla bla
+początki w GIT i nie tylko
